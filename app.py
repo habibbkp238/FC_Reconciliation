@@ -231,7 +231,7 @@ def preflight_indexlike(df: pd.DataFrame, name: str, limit: int = 20):
 # Header
 # =============================================================================
 st.title("📦Forecast Allocation/Reconciliation")
-st.caption("Top-Down Allocation with Reconciliation Method")
+st.caption("Top-Down → Reconcile → Weekly (opsional) → Safety Stock → Export")
 
 # Top bar chips
 tstamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -854,5 +854,4 @@ render_tabs_from_state(tabs)
 
 # Footer
 st.markdown("<hr/>", unsafe_allow_html=True)
-st.caption("© Demand Forecasting • Built with Streamlit • Designed by Irsandi Habibie/081295339822")
-
+st.caption("© Demand Forecasting — FMCG • Built with Streamlit • Designed by Irsandi Habibie")
